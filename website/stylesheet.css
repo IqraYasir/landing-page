@@ -1,17 +1,35 @@
-body, .header, .first-section {
+body, .header, .first-section, ul, .second-section, .cards, .third-section {
     display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.first-section, .header, .footer {
+    background-color: #1f2937;
+}
+
+.third-section {
+    background-color: lightgray;
+}
+
+.logo {
+    margin-top: 0%;
+    margin-left: 20px;
+    padding: 0;
 }
 
 .header {
     justify-content: space-between;
-    background-color: #1f2937;
 }
 
-.first-section {
-    background-color: #1f2937;
+.first-section, .third-section {
+    justify-content: center;
+    align-items: center;
 }
 
-body {
+body, .first-section, .second-section {
     flex-direction: column;
 }
 
@@ -27,13 +45,14 @@ h3, .hero {
     font-size: 48px;
 }
 
-.first-section, li {
+.first-section, li, .footer {
     font-size: 18px;
     color: #e5e7eb;
 }
 
 button, .last-section {
     background-color: #3882f6;
+    color: #e5e7eb;
 }
 
 h3, #quote {
