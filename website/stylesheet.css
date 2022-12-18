@@ -1,4 +1,21 @@
-#logo, .hero  {
+body, .header, .first-section {
+    display: flex;
+}
+
+.header {
+    justify-content: space-between;
+    background-color: #1f2937;
+}
+
+.first-section {
+    background-color: #1f2937;
+}
+
+body {
+    flex-direction: column;
+}
+
+.logo, .hero  {
     color: #f9faf8;
 }
 
@@ -21,7 +38,7 @@ button, .last-section {
 
 h3, #quote {
    font-size: 36px;
-   color: #1f2936; 
+   color: #1f2937; 
 }
 
 #quote {
