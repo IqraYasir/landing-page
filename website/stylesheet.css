@@ -1,12 +1,11 @@
-body, .header, ul, .section1, .section2, .first, .cards, .section3 {
+body, .header, ul, .section1, .section2, .first, .cards, .section3, .section4, .board, .footer {
     display: flex;
 }
 
 body, .section1, .section2, .section3 {
-    flex-flow: column wrap;
+    flex-direction: column;
     gap: 32px;
 }
-
 
 .section1 {
     background-color: #1f2936;
@@ -14,7 +13,7 @@ body, .section1, .section2, .section3 {
     align-items: center;
 }
 
-.header, .first{
+.header, .first {
     justify-content: space-between;
     width: 1400px;
     flex-wrap: wrap;
@@ -22,7 +21,6 @@ body, .section1, .section2, .section3 {
 
 .side {
     width: 500px;
-    flex: initial;
 }
 
 .logo, #hero, #quote, h3, p{
@@ -40,7 +38,7 @@ body, .section1, .section2, .section3 {
     margin-top: 0%;
 }
 
-p, li {
+p, li, .footer {
     font-size: 18px;
     color: #e5e7eb;
 }
@@ -57,15 +55,16 @@ a {
 }
 
 .cards {
-    gap: 24px;
+    gap: 60px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .s1, .s2, .s3, .s4 {
     width: 200px;
-    height: 250px;
+    height: 200px;
     border: #3882f6 solid;
+    border-radius: 10%;
 } 
 
 .card1, .card2, .card3, .card4 {
@@ -73,6 +72,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 200px;
 }
 
 h3 {
@@ -94,11 +94,6 @@ h3, #hero {
     font-weight: bold;
 }
 
-button, .last-section {
-    background-color: #3882f6;
-    color: #e5e7eb;
-}
-
 h3, #quote {
    font-size: 36px;
    color: #1f2936; 
@@ -106,4 +101,31 @@ h3, #quote {
 
 #quote {
     font-style: italic;
+}
+
+.section4 {
+    justify-content: center;
+    align-items: center;
+}
+
+button, .board {
+    background-color: #3882f6;
+    color: #e5e7eb;
+}
+
+.board {
+    justify-content: space-between;
+    padding: 16px 80px;
+}
+
+button {
+    height: fit-content;
+    align-self: center;
+}
+
+.footer {
+    justify-content: center;
+    background-color: #1f2936;
+    height: 80px;
+    align-items: center;
 }
